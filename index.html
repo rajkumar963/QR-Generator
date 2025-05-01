@@ -10,13 +10,15 @@
     <div class="qr">
         <p>Enter your text or URL</p>
         <input type="text" placeholder="text or URL" id="qrtext">
-
-    <button onclick="generateQR()">Generate QR code</button>
-        <div class="imgbox">
+        <button onclick="generateQR()">Generate QR code</button>
+        <div class="imgbox" id="imgbox">
             <img src="" id="QRImage">
         </div>
+        <div class="share-container" id="shareContainer">
+            <button id="shareButton" onclick="shareQR()">Share QR Code</button>
+            <button id="downloadButton" onclick="downloadQR()">Download QR</button>
+        </div>
     </div>
-    
     <script src="./app.js"></script>
 </body>
 </html>
